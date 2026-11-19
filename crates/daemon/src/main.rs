@@ -23,7 +23,7 @@ struct AppState {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    tracing_subscriber::fmt().with_env_filter("info").init();
+    tracing_subscriber::fmt().init();
     let token = std::env::var("HARNESSD_TOKEN").unwrap_or_else(|_| uuid::Uuid::new_v4().to_string());
     let (tx, _rx) = mpsc::channel(256);
     let (btx, _) = broadcast::channel(256);

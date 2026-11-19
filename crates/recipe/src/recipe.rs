@@ -178,7 +178,7 @@ impl Recipe {
             path: "prompt.text".into(),
             message: e.to_string(),
         })?;
-        let ctx = minijinja::context! { ..self.prompt.vars.clone() };
+        let ctx = minijinja::Value::from_serialize(self.prompt.vars.clone());
         let rendered = tmpl.render(ctx).map_err(|e| RecipeError::Field {
             path: "prompt.text".into(),
             message: e.to_string(),

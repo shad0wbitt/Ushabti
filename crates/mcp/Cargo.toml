@@ -1,0 +1,16 @@
+[package]
+name = "kestrel-mcp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "MCP client integration for the Kestrel harness."
+
+[dependencies]
+kestrel-protocol = { path = "../protocol" }
+rmcp = { version = "3.11", default-features = false, features = ["client","transport-child-process"] }
+tokio = { workspace = true, features = ["process"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }

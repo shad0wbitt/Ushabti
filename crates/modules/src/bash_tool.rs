@@ -3,7 +3,8 @@
 use crate::paths::safe_resolve;
 use crate::truncate::truncate_output;
 use async_trait::async_trait;
-use kestrel_core::{Tool, ToolContext, ToolError, ToolOutput};
+use kestrel_core::{Tool, ToolError};
+use kestrel_protocol::{ToolContext, ToolOutput};
 use serde_json::Value;
 use std::path::PathBuf;
 use std::process::Stdio;

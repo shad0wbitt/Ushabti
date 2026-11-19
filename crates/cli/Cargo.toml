@@ -19,4 +19,6 @@ tokio = { workspace = true }
 clap = { workspace = true }
 anyhow = { workspace = true }
 tracing = { workspace = true }
+tokio-util = { workspace = true }
+uuid = { workspace = true }
 tokio-stream = { workspace = true }

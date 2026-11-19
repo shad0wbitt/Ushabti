@@ -9,12 +9,16 @@ members = [
     "crates/tui",
     "crates/daemon",
     "crates/eval",
+    "crates/mcp",
 ]
 
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
+rust-version = "1.88"
+homepage = "https://github.com/shad0wbitt/Ushabti"
+repository = "https://github.com/shad0wbitt/Ushabti"
 
 [workspace.dependencies]
 serde = { version = "1", features = ["derive"] }
@@ -27,6 +31,7 @@ reqwest = { version = "0.12", features = ["json", "stream"] }
 thiserror = "1"
 anyhow = "1"
 tracing = "0.1"
+rmcp-macros = { path = "reference/rust-sdk/crates/rmcp-macros" }
 bytes = "1"
 clap = { version = "4", features = ["derive"] }
 eventsource-stream = "0.2"
