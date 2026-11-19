@@ -14,3 +14,7 @@ crossterm = { workspace = true }
 ratatui = { workspace = true }
 anyhow = { workspace = true }
 tracing = { workspace = true }
+
+[[bin]]
+name = "harness-tui"
+path = "src/main.rs"
