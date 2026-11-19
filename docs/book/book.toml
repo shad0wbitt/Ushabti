@@ -1,0 +1,7 @@
+[book]
+title = "Ushabti"
+authors = ["Ushabti"]
+language = "en"
+src = "src"
+
+[output.html]
