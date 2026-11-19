@@ -15,4 +15,3 @@ anyhow = { workspace = true }
 schemars = { workspace = true }
 minijinja = { workspace = true }
 sha2 = { workspace = true }
-EOF
