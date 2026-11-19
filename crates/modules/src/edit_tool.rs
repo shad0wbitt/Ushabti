@@ -55,4 +55,3 @@ impl Tool for EditTool {
         Ok(ToolOutput { content: "ok".into(), is_error: false })
     }
 }
-EOF

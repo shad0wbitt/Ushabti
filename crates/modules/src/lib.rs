@@ -12,4 +12,3 @@ pub use edit_tool::EditTool;
 pub use openai_provider::OpenAiProvider;
 pub use read_tool::ReadTool;
 pub use truncate::truncate_output;
-EOF

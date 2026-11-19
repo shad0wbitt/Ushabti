@@ -93,4 +93,3 @@ impl SessionStore {
         Ok(rows.into_iter().map(|(id, created_at, recipe_hash, title)| SessionMeta { id, created_at, recipe_hash, title }).collect())
     }
 }
-EOF

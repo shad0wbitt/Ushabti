@@ -195,4 +195,3 @@ impl Recipe {
         format!("{:x}", h.finalize())
     }
 }
-EOF

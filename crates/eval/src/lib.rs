@@ -112,4 +112,3 @@ pub fn compare_reports(a: &RegressionReport, b: &RegressionReport) -> serde_json
         "delta_pass": b.pass_count as i64 - a.pass_count as i64,
     })
 }
-EOF

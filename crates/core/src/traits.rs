@@ -53,4 +53,3 @@ pub fn tool_schema<T: Tool + ?Sized>(t: &T) -> ToolSchema {
         parameters: t.schema(),
     }
 }
-EOF

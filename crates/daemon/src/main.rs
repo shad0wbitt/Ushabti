@@ -95,4 +95,3 @@ async fn handle_socket(mut socket: WebSocket, state: Arc<AppState>) {
         }
     }
 }
-EOF

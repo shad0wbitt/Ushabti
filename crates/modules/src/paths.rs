@@ -55,4 +55,3 @@ pub fn safe_resolve(root: &Path, input: &str) -> Result<PathBuf, String> {
         Ok(normalized)
     }
 }
-EOF

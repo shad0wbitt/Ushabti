@@ -112,4 +112,3 @@ async fn main() -> Result<()> {
     let _ = PROTOCOL_VERSION;
     Ok(())
 }
-EOF

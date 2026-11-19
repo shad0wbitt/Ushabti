@@ -124,4 +124,3 @@ impl MemoryStore for SqliteMemory {
         Ok(out)
     }
 }
-EOF

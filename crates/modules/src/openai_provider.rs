@@ -193,4 +193,3 @@ impl Provider for OpenAiProvider {
         "openai"
     }
 }
-EOF

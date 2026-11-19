@@ -14,4 +14,3 @@ pub fn truncate_output(s: &str, max_bytes: usize) -> (String, bool) {
     out.push_str("\n...[truncated]...\n");
     (out, true)
 }
-EOF

@@ -67,4 +67,3 @@ impl RecipeVersionStore {
         Ok(row.map(|(hash, timestamp, content)| RecipeVersion { hash, timestamp, content }))
     }
 }
-EOF

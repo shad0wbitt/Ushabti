@@ -113,4 +113,3 @@ impl Guardrail for PiiRedaction {
         GuardrailDecision::Allow
     }
 }
-EOF

@@ -99,4 +99,3 @@ impl Tool for BashTool {
         }
     }
 }
-EOF

@@ -75,4 +75,3 @@ impl Tool for ReadTool {
 // keep schema import used
 #[allow(dead_code)]
 fn _schema(_s: ToolSchema) {}
-EOF

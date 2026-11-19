@@ -287,4 +287,3 @@ pub fn handle_approval_key(state: &mut AppState, key: char) -> Option<Command> {
         _ => None,
     }
 }
-EOF

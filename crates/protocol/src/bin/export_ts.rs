@@ -11,4 +11,3 @@ fn main() {
     // Types must derive TS for export; left as TODO.
     println!("export dir ready: {}", out.display());
 }
-EOF
