@@ -1,0 +1,18 @@
+[package]
+name = "kestrel-recipe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Recipe format and validation for the Kestrel harness."
+
+[dependencies]
+kestrel-protocol = { path = "../protocol" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = "0.9"
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+schemars = { workspace = true }
+minijinja = { workspace = true }
+sha2 = { workspace = true }
+EOF

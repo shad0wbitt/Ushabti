@@ -1,0 +1,22 @@
+[package]
+name = "kestrel-modules"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Concrete providers, tools, memory and guardrails."
+
+[dependencies]
+kestrel-protocol = { path = "../protocol" }
+kestrel-core = { path = "../core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+async-trait = { workspace = true }
+futures = { workspace = true }
+reqwest = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tokio-util = { workspace = true }
+bytes = { workspace = true }
+async-stream = "0.3"
