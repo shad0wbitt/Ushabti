@@ -5,6 +5,7 @@ use crate::traits::{Provider, Tool, tool_schema};
 use kestrel_protocol::{Chunk, Event, FinishReason, Message, Role, ToolCall, ToolResult, ToolSchema};
 use std::collections::BTreeMap;
 use std::sync::Arc;
+use std::pin::Pin;
 use tokio::sync::mpsc;
 use tokio_util::sync::CancellationToken;
 

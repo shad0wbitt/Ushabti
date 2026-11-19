@@ -119,6 +119,27 @@ pub enum FinishReason {
     Other,
 }
 
+
+/// Context passed to a tool during execution.
+#[derive(Debug, Clone)]
+pub struct ToolContext {
+    /// Session id.
+    pub session_id: String,
+    /// Working directory.
+    pub cwd: std::path::PathBuf,
+    /// Approval sender (placeholder).
+    pub approval_tx: tokio::sync::mpsc::Sender<crate::Event>,
+}
+
+/// Output of a tool execution.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+pub struct ToolOutput {
+    /// Content.
+    pub content: String,
+    /// Whether it is an error.
+    pub is_error: bool,
+}
+
 /// Normalized streaming chunk from a provider.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(tag = "type", rename_all = "snake_case")]
