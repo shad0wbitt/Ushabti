@@ -89,7 +89,7 @@ pub async fn run_agent(
         // tool call accumulators: index -> (id, name, args_json)
         let mut tool_acc: BTreeMap<usize, (String, String, String)> = BTreeMap::new();
         let mut finish = FinishReason::Stop;
-        let mut usage = kestrel_protocol::Usage::default();
+        let mut _usage = kestrel_protocol::Usage::default();
 
         use futures::StreamExt;
         while let Some(item) = stream.next().await {
@@ -126,7 +126,7 @@ pub async fn run_agent(
                     entry.2.push_str(&arguments_delta);
                 }
                 Chunk::Usage { usage: u } => {
-                    usage = u;
+                    _usage = u;
                     let _ = events_tx
                         .send(Event::UsageUpdate {
                             session_id: config.session_id.clone(),
@@ -186,7 +186,7 @@ pub async fn run_agent(
         // NOTE: ToolContext.approval_tx is a placeholder here; real wiring happens in modules/daemon.
 
         let mut join_set = tokio::task::JoinSet::new();
-        for call in tool_calls {
+        for call in tool_calls.clone() {
             let tool = tool_map.get(&call.name).cloned();
             let call_clone = call.clone();
             let ctx_clone = ctx.clone();
