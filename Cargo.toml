@@ -26,7 +26,7 @@ futures = "0.3"
 reqwest = { version = "0.12", features = ["json", "stream"] }
 thiserror = "1"
 anyhow = "1"
-tracing = "1"
+tracing = "0.1"
 bytes = "1"
 clap = { version = "4", features = ["derive"] }
 eventsource-stream = "0.2"
