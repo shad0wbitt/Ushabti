@@ -1,0 +1,27 @@
+[package]
+name = "harnessd"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Daemon exposing the Kestrel core over WebSocket and REST."
+
+[[bin]]
+name = "harnessd"
+path = "src/main.rs"
+
+[dependencies]
+kestrel-protocol = { path = "../protocol" }
+kestrel-core = { path = "../core" }
+kestrel-recipe = { path = "../recipe" }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["json"] }
+uuid = { workspace = true }
+ts-rs = { workspace = true }
+EOF
