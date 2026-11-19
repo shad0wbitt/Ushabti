@@ -1,0 +1,20 @@
+[package]
+name = "kestrel-eval"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Eval replay and regression reporting."
+
+[dependencies]
+kestrel-protocol = { path = "../protocol" }
+kestrel-core = { path = "../core" }
+kestrel-recipe = { path = "../recipe" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+uuid = { workspace = true }
+tempfile = "3"
+EOF

@@ -8,6 +8,7 @@ members = [
     "crates/cli",
     "crates/tui",
     "crates/daemon",
+    "crates/eval",
 ]
 
 [workspace.package]
@@ -44,3 +45,10 @@ sha2 = "0.10"
 sqlx = { version = "0.8", features = ["sqlite","runtime-tokio-rustls","migrate"] }
 minijinja = "2"
 chrono = "0.4"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
