@@ -2,4 +2,7 @@
 Cargo.lock
 *.log
 .DS_Store
-EOF
+ecc/
+impeccable/
+unslop/
+artcraft-clone/
