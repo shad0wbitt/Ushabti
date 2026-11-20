@@ -167,7 +167,7 @@ pub async fn run_agent(
             .await;
 
         // If no tool calls or stop, done.
-        if tool_calls.is_empty() || finish == FinishReason::Stop {
+        if tool_calls.is_empty() {
             let _ = events_tx
                 .send(Event::SessionEnded {
                     session_id: config.session_id.clone(),
